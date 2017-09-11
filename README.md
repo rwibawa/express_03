@@ -40,8 +40,21 @@ $ tree
 * [expresjs integration](https://expressjs.com/en/guide/using-template-engines.html)
 
 ## 3. Heroku deployment
+
+### Create a `Procfile`
 ```
 web: npm start
+```
+
+### Heroku commands
+```bash
+$ heroku login
+$ heroku create
+Creating app... done, ⬢ morning-escarpment-26219
+https://morning-escarpment-26219.herokuapp.com/ | https://git.heroku.com/morning-escarpment-26219.git
+
+$  git push heroku master
+$  heroku logs --tail
 ```
 
 ## 4. Setup Angular UI
