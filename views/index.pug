@@ -1,12 +1,44 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
 
-  div(ng-repeat='product in store.products')
-    h2 Name: {{product.name}}
-    h3 Price: {{product.price | currency}}
-    p Description: {{product.description}}
+
+block content
+  //- h1= title
+  //- p Welcome to #{title}
+
+  //- Default home page
+  nav(class="navbar navbar-inverse navbar-fixed-top")
+    div(class="container")
+      div(class="navbar-header")
+        button(
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar"
+        )
+          span(class="sr-only") Toggle navigation
+          span(class="icon-bar")
+          span(class="icon-bar")
+          span(class="icon-bar")
+
+        a(class="navbar-brand", href="#") Project name
+
+      div(id="navbar", class="navbar-collapse collapse")
+        form(class="navbar-form navbar-right")
+          div(class="form-group")
+            input(type="text", placeholder="Email", class="form-control")
+
+          div(class="form-group")
+            input(type="password" placeholder="Password" class="form-control")
+
+          button(type="submit" class="btn btn-success") Sign in
+
+  //- Uncomment the block below to check if ng works
+    div(ng-repeat='product in store.products')
+      h2 Name: {{product.name}}
+      h3 Price: {{product.price | currency}}
+      p Description: {{product.description}}
 
   <!--[if lte IE 8]> <script src="vendor/angular-ui/build/angular-ui-ieshiv.js"></script><![endif]-->
