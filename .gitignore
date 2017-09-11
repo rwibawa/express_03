@@ -25,7 +25,8 @@ nbdist/
 
 # UI
 node_modules/
-bower_components/
+public/vendor
+#bower_components/
 # src/main/resources/static/assets/vendor
 # src/main/resources/static/test
 # src/main/resources/static/tests

@@ -35,3 +35,26 @@ $ tree
 ### Open it
 [http://localhost:3000/](http://localhost:3000/)
 
+## 2. Pug template engine (formerly Jade)
+* [Pug doc](https://pugjs.org/language/attributes.html)
+* [expresjs integration](https://expressjs.com/en/guide/using-template-engines.html)
+
+## 3. Heroku deployment
+```
+web: npm start
+```
+
+## 4. Setup Angular UI
+```bash
+$ mkdir public/vendor
+
+$ echo '{"directory" : "public/vendor"}' > .bowerrc
+$ npm install bower --save
+
+$ bower init
+$ bower install bootstrap --save
+$ bower install angular --save
+$ bower install angular-ui --save
+$ bower install font-awesome --save
+```
+ 
