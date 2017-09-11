@@ -1,0 +1,26 @@
+{
+  "name": "express-03",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Wibawa",
+    "Ryan (GE Digital",
+    "consultant) <ryan.wibawa@ge.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rwibawa/express_03",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.6",
+    "angular-ui": "^0.4.0",
+    "font-awesome": "^4.7.0"
+  }
+}
