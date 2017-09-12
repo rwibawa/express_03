@@ -53,8 +53,31 @@ $ heroku create
 Creating app... done, ⬢ morning-escarpment-26219
 https://morning-escarpment-26219.herokuapp.com/ | https://git.heroku.com/morning-escarpment-26219.git
 
-$  git push heroku master
-$  heroku logs --tail
+$ git push heroku master
+...
+remote: -----> Caching build
+remote:        Clearing previous node cache
+remote:        Saving 2 cacheDirectories (default):
+remote:        - node_modules
+remote:        - bower_components (nothing to cache)
+remote:
+remote: -----> Build succeeded!
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 19.1M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://morning-escarpment-26219.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/morning-escarpment-26219.git
+ * [new branch]      master -> master
+
+
+$ heroku open
+$ heroku logs --tail
 ```
 
 ## 4. Setup Angular UI

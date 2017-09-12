@@ -10,6 +10,10 @@ var users = require('./routes/users');
 
 var app = express();
 
+// less-express
+var lessExpress = require('less-express');
+app.get('/css/bootstrap.css', lessExpress('./public/vendor/bootstrap/less/bootstrap.less'));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');

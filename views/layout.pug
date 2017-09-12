@@ -1,7 +1,18 @@
 doctype html
-html
+html(lang='en', ng-app='store')
   include includes/head.pug
-  body
+  body(ng-controller='StoreController as store')
     block content
 
     include includes/foot.pug
+
+    <!--[if lte IE 8]) script src="vendor/angular-ui/build/angular-ui-ieshiv.js")/script)![endif]-->
+
+    script(src='/vendor/jquery/dist/jquery.min.js')
+    script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/vendor/bootstrap/dist/js/npm.js')
+    script(src='/vendor/angular/angular.min.js')
+    script(src='/vendor/angular-ui/build/angular-ui.min.js')
+
+    //- Angular UI
+    script(src='/javascripts/app.js')
